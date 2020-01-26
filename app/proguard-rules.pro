@@ -32,6 +32,9 @@
 # BootSigner
 -keep class a.a { *; }
 
+# DynAPK
+-keepclassmembers class a.e { <init>(...); }
+
 # Strip logging
 -assumenosideeffects class timber.log.Timber.Tree { *; }
 
